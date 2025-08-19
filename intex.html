@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Teo Box</title>
+  <style>
+    :root {
+      --fondo-principal: #FFF8F0;
+      --fondo-secundario: #FDE2E4;
+      --titulo-color: #5D4037;
+      --subtitulo-color: #7A6F68;
+      --texto-base: #4E4E4E;
+      --cta-principal: #FFC857;
+      --cta-hover: #FFB627;
+      --cta-secundario: #FF7F51;
+      --botones-redes: #A8D5BA;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Poppins', sans-serif; background: var(--fondo-principal); color: var(--texto-base); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    header { background: var(--fondo-secundario); text-align: center; padding: 2rem 1rem; }
+    header h1 { color: var(--titulo-color); font-size: 2.5rem; }
+    header p { color: var(--subtitulo-color); margin-top: 0.5rem; font-size: 1.1rem; }
+    .btn-cta { background: var(--cta-principal); color: #fff; padding: 0.8rem 1.5rem; border-radius: 8px; font-size: 1rem; display: inline-block; margin: 1rem 0; transition: background 0.3s; }
+    .btn-cta:hover { background: var(--cta-hover); }
+    .container { max-width: 900px; margin: auto; padding: 2rem 1rem; }
+    h2 { color: var(--titulo-color); margin-bottom: 1rem; font-size: 1.8rem; }
+    .courses, .catalog { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+    @media(min-width:600px) { .courses, .catalog { grid-template-columns: repeat(2, 1fr); } }
+    .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .card img { width: 100%; display: block; }
+    .card-content { padding: 1rem; }
+    .card-content h3 { margin-bottom: 0.5rem; color: var(--titulo-color); }
+    .card-content p { margin-bottom: 1rem; color: var(--texto-base); }
+    .faq { margin-top: 2rem; }
+    .faq-item { margin-bottom: 0.5rem; }
+    .faq-item button { width: 100%; background: var(--fondo-secundario); border: none; padding: 1rem; text-align: left; font-size: 1rem; border-radius: 8px; color: var(--titulo-color); cursor: pointer; transition: background 0.2s; }
+    .faq-item button:hover { background: var(--fondo-principal); }
+    .faq-item div { padding: 1rem; background: white; border-radius: 0 0 8px 8px; display: none; color: var(--texto-base); }
+    .testimonials { overflow-x: auto; display: flex; gap: 1rem; padding: 1rem 0; }
+    .testimonial { min-width: 250px; background: white; border-radius: 12px; padding: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .testimonial p { font-style: italic; }
+    footer { background: var(--titulo-color); color: #fff; text-align: center; padding: 1rem; margin-top: 2rem; font-size: 0.9rem; }
+    .social-btn { background: var(--botones-redes); color: white; width: 50px; height: 50px; border-radius: 50%; position: fixed; bottom: 15px; right: 15px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2); transition: transform 0.3s; }
+    .social-btn:hover { transform: scale(1.1); }
+  </style>
+</head>
+<body>
+  <header>
+	<img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/07/untitled-design-1.png" alt="Logo Happy Teo Box" style="width: 120px; border-radius: 50%; margin-bottom: 20px;" />
+
+<section class="banner">
+    <div class="banner-content">
+        <h1>Consiéntelos y cuídalos con Happy Teo Box</h1>
+        <p>Transforma tu amor en momentos deliciosos para ellos.</p>
+        <a href="#cursos" class="btn-cta">Ver Cursos Destacados</a>
+    </div>
+</section>
+
+  </header>
+
+  <section class="container">
+    <h2>Sobre Happy Teo Box</h2>
+    <p>En <strong>Happy Teo Box</strong> creemos que nuestras mascotas merecen lo mejor. Por eso, seleccionamos cuidadosamente cursos y talleres online para que aprendas a cuidarlas, nutrirlas y consentirlas de forma saludable y creativa.  
+       Transforma tu amor en conocimiento para sorprenderlas de manera deliciosa y el bienestar que se merecen.</p>
+  </section>
+
+  <section class="container">
+<section id="cursos" class="cursos-destacados">
+    <h2>Cursos Destacados</h2>
+    <div class="cursos-grid">
+    <div class="courses">
+      <div class="card">
+	<a href="https://go.hotmart.com/I101035560D?dp=1" target="_blank">
+        <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/3_20211207_151006_0002-3.png" alt="Mascotas Sanas">
+        <div class="card-content">
+          <h3>Mascotas Sanas</h3>
+          <p>Mejora el bienestar de tus peludos con consejos prácticos y accesibles.</p>
+          <a href="https://go.hotmart.com/I101035560D?dp=1" class="btn-cta">Inscribirme</a>
+        </div>
+      </div>
+      <div class="card">
+	<a href="https://go.hotmart.com/A101035327V" target="_blank">
+        <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/captura-de-pantalla-7-1.png" alt="Pastelería Canina y Felina">
+        <div class="card-content">
+          <h3>Pastelería Canina y Felina</h3>
+          <p>Recetas deliciosas para consentir a tu mascota sin complicaciones.</p>
+          <a href="https://go.hotmart.com/A101035327V" class="btn-cta">Inscribirme</a>
+        </div>
+      </div>
+      <div class="card">
+	<a href="https://go.hotmart.com/J101035286T?dp=1" target="_blank">
+        <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/jpg_20230206_132051_0000-3.jpg" alt="Técnicas de Decoración">
+        <div class="card-content">
+          <h3>Técnicas de Decoración</h3>
+          <p>Domina el arte de decorar pasteles para mascotas que enamoran.</p>
+          <a href="https://go.hotmart.com/J101035286T?dp=1" class="btn-cta">Inscribirme</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    </header>
+
+
+</body>
+</html>
+</body>
+
+ <div style="background-color: #fff4ea; padding: 120px 10px 40px; /* Aumentado el padding-top */ text-align: center; font-family: 'Segoe UI', sans-serif;">
+        <h2 style="font-size: 32px; color: #5a3a2d; margin-bottom: 20px; display: inline-block;">
+            <span style="font-size: 36px; vertical-align: middle; margin-right: 15px;">🐾</span>
+            <span style="vertical-align: middle;">CATÁLOGO DE CURSOS</span>
+        </h2>
+        <div style="width: 80px; height: 4px; background-color: #8bb59f; margin: 0 auto; border-radius: 2px;"></div>
+    </div>
+
+
+
+<section id="catalogo" style="background-color: #fff4ea; padding: 10px 10px; font-family: 'Segoe UI', sans-serif;">
+    <style>
+        /* Estilos CSS internos para la sección del catálogo */
+        /* Nota: Para proyectos más grandes, es mejor mover estos estilos a un archivo .css externo */
+        .catalogo-cursos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 10px;
+            margin: 10px auto; /* Usamos margin: auto para centrar el grid si tiene max-width */
+            max-width: 1100px; /* Añadimos un max-width para que no se extienda demasiado en pantallas grandes */
+        }
+        .curso-box {
+            border: 1px solid #e0e0e0;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            background-color: #fffdfc; /* Mantenemos este color para las tarjetas de curso, ya que se ve bien */
+            box-shadow: 0 0 5px rgba(0,0,0,0.05);
+            display: flex; /* Añadido para asegurar que el contenido dentro de la tarjeta se alinee bien */
+            flex-direction: column; /* Contenido en columna */
+            justify-content: space-between; /* Empuja el botón hacia abajo si el texto es corto */
+        }
+        .curso-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 10px; /* Espacio entre imagen y título */
+        }
+        .curso-box h3 {
+            margin: 12px 0 8px;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .curso-box p {
+            font-size: 0.95em;
+            color: #555;
+            margin-bottom: 15px;
+            flex-grow: 1; /* Permite que el párrafo crezca para alinear los botones */
+        }
+        .curso-box a.boton {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #e7725c;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            margin-top: auto; /* Empuja el botón a la parte inferior de la tarjeta */
+        }
+        .curso-box a.boton:hover {
+            background-color: #d95c45;
+        }
+    </style>
+
+    <div class="catalogo-cursos">
+        <div class="curso-box">
+            <a href="https://go.hotmart.com/A101035327V" target="_blank">
+                <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/captura-de-pantalla-7-1.png" alt="Pastelería Canina y Felina">
+            </a>
+            <h3>🎂 Pastelería Canina y Felina</h3>
+            <p>🎓 Curso completo para crear cupcakes, galletas y tortas saludables para perros y gatos. Ideal para emprender con estilo.</p>
+            <a class="boton" href="https://go.hotmart.com/A101035327V" target="_blank">Acceder al curso</a>
+        </div>
+
+        <div class="curso-box">
+            <a href="https://go.hotmart.com/F101035254X?ap=a54b" target="_blank">
+                <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/imagen-de-whatsapp-2025-07-25-a-las-00.02.19_c931364b-2.jpg" alt="Deshidratados">
+            </a>
+            <h3>🦴 Deshidratados</h3>
+            <p>🍖 Aprende a deshidratar frutas, carnes y vegetales 100% naturales para snacks saludables. Cuida la salud de tu mascota.</p>
+            <a class="boton" href="https://go.hotmart.com/F101035254X?ap=a54b" target="_blank">Acceder al curso</a>
+        </div>
+
+        <div class="curso-box">
+            <a href="https://go.hotmart.com/E101035244C?ap=dc29" target="_blank">
+                <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/imagen-de-whatsapp-2025-07-25-a-las-00.07.04_024bf077-2.jpg" alt="Dietas Cocinadas para Perros">
+            </a>
+            <h3>🍽️ Dietas Cocinadas para Perros</h3>
+            <p>🥣 Prepara menús caseros, nutritivos y equilibrados con respaldo veterinario. Perfecto para dueños responsables y principiantes.</p>
+            <a class="boton" href="https://go.hotmart.com/E101035244C?ap=dc29" target="_blank">Acceder al curso</a>
+        </div>
+
+        <div class="curso-box">
+            <a href="https://go.hotmart.com/I101035560D?dp=1" target="_blank">
+                <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/3_20211207_151006_0002-3.png" alt="Mascotas Sanas">
+            </a>
+            <h3>🐾 Mascotas Sanas</h3>
+            <p>🩺 Aprende a identificar desequilibrios en la salud de tu mascota y mejorar su bienestar con alimentación natural.</p>
+            <a class="boton" href="https://go.hotmart.com/I101035560D?dp=1" target="_blank">Acceder al curso</a>
+        </div>
+
+        <div class="curso-box">
+            <a href="https://go.hotmart.com/J101035286T?dp=1" target="_blank">
+                <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/jpg_20230206_132051_0000-3.jpg" alt="Técnicas de Decoración">
+            </a>
+            <h3>🧁 Técnicas de Decoración</h3>
+            <p>🎨 Aprende a decorar postres saludables para mascotas como un profesional. Dale el toque final a tus creaciones y destaca en el mercado.</p>
+            <a class="boton" href="https://go.hotmart.com/J101035286T?dp=1" target="_blank">Acceder al curso</a>
+        </div>
+
+        <div class="curso-box">
+            <a href="https://go.hotmart.com/G101035298L?ap=ee5f" target="_blank">
+                <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/imagen-horizontal-5.jpg" alt="Petlados">
+            </a>
+            <h3>🍦 Petlados</h3>
+            <p>🍧 Prepara helados artesanales, seguros y deliciosos para perros y gatos. Ideal para sorprender o iniciar un negocio refrescante.</p>
+            <a class="boton" href="https://go.hotmart.com/G101035298L?ap=ee5f" target="_blank">Acceder al curso</a>
+        </div>
+
+        <div class="curso-box">
+            <a href="https://go.hotmart.com/G101140605I?ap=98c3" target="_blank">
+                <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/imagen-horizontal-1-2.jpg" alt="Pastelería Inclusiva">
+            </a>
+            <h3>🍪 Pastelería Inclusiva</h3>
+            <p>❤️ Aprende a preparar postres saludables y seguros para mascotas con enfermedades crónicas o restricciones alimentarias.</p>
+            <a class="boton" href="https://go.hotmart.com/G101140605I?ap=98c3" target="_blank">Acceder al curso</a>
+        </div>
+
+        <div class="curso-box">
+            <a href="https://go.hotmart.com/J101035306C?ap=8530" target="_blank">
+                <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/imagen-horizontal-2-1-4.jpg" alt="Rapi Petlicias">
+            </a>
+            <h3>⚡ Rapi Petlicias</h3>
+            <p>🥮 Recetas rápidas, nutritivas y fáciles de preparar. Perfectas para vender o consentir a tu mascota sin complicarte.</p>
+            <a class="boton" href="https://go.hotmart.com/J101035306C?ap=8530" target="_blank">Acceder al curso</a>
+        </div>
+
+        <div class="curso-box">
+            <a href="https://go.hotmart.com/S101035173I?dp=1" target="_blank">
+                <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/img_20230202_184237-2.png" alt="Cupido Petfriendly">
+            </a>
+            <h3>💘 Cupido También es Petfriendly</h3>
+            <p>🐾 Deliciosas recetas románticas para San Valentín. Sorprende a tu mascota o emprende con productos irresistibles para fechas especiales.</p>
+            <a class="boton" href="https://go.hotmart.com/S101035173I?dp=1" target="_blank">Acceder al curso</a>
+        </div>
+
+        <div class="curso-box">
+            <a href="https://go.hotmart.com/D101035168W?ap=cead" target="_blank">
+                <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/imagen-horizontal-2-1-3.jpg" alt="Repostería de Halloween">
+            </a>
+            <h3>🎃 Repostería de Halloween</h3>
+            <p>👻 Aprende recetas espeluznantemente saludables y decorativas. Ideal para emprender en octubre y ofrecer productos únicos y divertidos.</p>
+            <a class="boton" href="https://go.hotmart.com/D101035168W?ap=cead" target="_blank">Acceder al curso</a>
+        </div>
+
+        <div class="curso-box">
+            <a href="https://go.hotmart.com/K101035171G?ap=7ad4" target="_blank">
+                <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/img_20241028_135440-3.png" alt="Petlicias Navideñas">
+            </a>
+            <h3>🎄 Petlicias Navideñas</h3>
+            <p>🎅 Crea galletas y postres navideños para perros y gatos. Diseñado para aprovechar la temporada más mágica del año y aumentar tus ventas.</p>
+            <a class="boton" href="https://go.hotmart.com/K101035171G?ap=7ad4" target="_blank">Acceder al curso</a>
+        </div>
+    </div> 
+
+<section id="guia-cursos" style="background-color: #fff9f3; padding: 50px 20px; font-family: 'Segoe UI', sans-serif;">
+    <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
+        <h2 style="font-size: 32px; color: #5c3d2e; margin-bottom: 10px;">¿No sabes por cuál curso comenzar?</h2>
+        <p style="font-size: 18px; color: #7a5c4d; margin-bottom: 40px;">Usa esta mini guía para elegir el curso ideal según tus intereses, necesidades y nivel.</p>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+
+            <div style="flex: 1 1 300px; background-color: #f6e1cf; border-radius: 12px; padding: 25px; box-shadow: 0 0 10px rgba(0,0,0,0.05);">
+                <h3 style="color: #6a4b3a; font-size: 20px; margin-bottom: 15px;">🎂 ¿Te apasiona la repostería y la decoración?</h3>
+                <p style="color: #5a4437; margin-bottom: 20px;">Si quieres crear postres hermosos y deliciosos para mascotas, estos cursos son para ti:</p>
+
+                <div style="margin-bottom: 15px;">
+                    <a href="https://go.hotmart.com/A101035327V" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/captura-de-pantalla-7-1.png" alt="Pastelería Canina y Felina" style="width: 100px; height: auto; border-radius: 8px; vertical-align: middle; margin-right: 10px;">
+                        <strong style="color: #4a3b33;">Pastelería Canina y Felina</strong>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://go.hotmart.com/J101035286T?dp=1" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/jpg_20230206_132051_0000-3.jpg" alt="Técnicas de Decoración" style="width: 100px; height: auto; border-radius: 8px; vertical-align: middle; margin-right: 10px;">
+                        <strong style="color: #4a3b33;">Técnicas de Decoración</strong>
+                    </a>
+                </div>
+            </div>
+
+            <div style="flex: 1 1 300px; background-color: #f6e1cf; border-radius: 12px; padding: 25px; box-shadow: 0 0 10px rgba(0,0,0,0.05);">
+                <h3 style="color: #6a4b3a; font-size: 20px; margin-bottom: 15px;">🍦 ¿Prefieres snacks naturales y diferentes?</h3>
+                <p style="color: #5a4437; margin-bottom: 20px;">Prepara delicias caseras y saludables con estos cursos:</p>
+
+                <div style="margin-bottom: 15px;">
+                    <a href="https://go.hotmart.com/F101035254X?ap=a54b" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/imagen-de-whatsapp-2025-07-25-a-las-00.02.19_c931364b-2.jpg" alt="Deshidratados" style="width: 100px; height: auto; border-radius: 8px; vertical-align: middle; margin-right: 10px;">
+                        <strong style="color: #4a3b33;">Deshidratados</strong>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://go.hotmart.com/G101035298L?ap=ee5f" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/imagen-horizontal-5.jpg" alt="Petlados" style="width: 100px; height: auto; border-radius: 8px; vertical-align: middle; margin-right: 10px;">
+                        <strong style="color: #4a3b33;">Petlados</strong>
+                    </a>
+                </div>
+            </div>
+
+            <div style="flex: 1 1 300px; background-color: #f6e1cf; border-radius: 12px; padding: 25px; box-shadow: 0 0 10px rgba(0,0,0,0.05);">
+                <h3 style="color: #6a4b3a; font-size: 20px; margin-bottom: 15px;">🍖 ¿Buscas una alimentación saludable y especializada?</h3>
+                <p style="color: #5a4437; margin-bottom: 20px;">Para el bienestar integral de tu mascota, considera:</p>
+
+                <div style="margin-bottom: 15px;">
+                    <a href="https://go.hotmart.com/E101035244C?ap=dc29" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/imagen-de-whatsapp-2025-07-25-a-las-00.07.04_024bf077-2.jpg" alt="Dietas Cocinadas para Perros" style="width: 100px; height: auto; border-radius: 8px; vertical-align: middle; margin-right: 10px;">
+                        <strong style="color: #4a3b33;">Dietas Cocinadas para Perros</strong>
+                    </a>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <a href="https://go.hotmart.com/I101035560D?dp=1" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/3_20211207_151006_0002-3.png" alt="Mascotas Sanas" style="width: 100px; height: auto; border-radius: 8px; vertical-align: middle; margin-right: 10px;">
+                        <strong style="color: #4a3b33;">Mascotas Sanas</strong>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://go.hotmart.com/G101140605I?ap=98c3" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/imagen-horizontal-1-2.jpg" alt="Pastelería Inclusiva" style="width: 100px; height: auto; border-radius: 8px; vertical-align: middle; margin-right: 10px;">
+                        <strong style="color: #4a3b33;">Pastelería Inclusiva</strong>
+                    </a>
+                </div>
+            </div>
+</section>
+</html><div style="background-color: #fff9f3; padding: 10px 10px; text-align: center; font-family: 'Segoe UI', sans-serif;">
+    <h2 style="font-size: 32px; color: #5a3a2d; margin-bottom: 10px; display: inline-block;">
+        <span style="font-size: 36px; vertical-align: middle; margin-right: 15px;">💡</span>
+        <span style="vertical-align: middle;">¿POR QUÉ ELEGIR NUESTROS CURSOS?</span>
+    </h2>
+    <div style="width: 80px; height: 4px; background-color: #8bb59f; margin: 0 auto; border-radius: 2px;"></div>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); /* Cambiamos a 3 columnas */ gap: 30px; max-width: 1100px; margin: auto;">
+
+
+    <div style="background-color: #f6e1cf; border-radius: 16px; padding: 20px; text-align: center; box-shadow: 0 0 10px rgba(0,0,0,0.05);">
+        <p style="font-size: 36px;">📚</p>
+        <h3 style="color: #5a3a2d;">Aprende desde casa</h3>
+        <p style="color: #5a3a2d;">A tu ritmo y en cualquier momento</p>
+    </div>
+
+    <div style="background-color: #f6e1cf; border-radius: 16px; padding: 20px; text-align: center; box-shadow: 0 0 10px rgba(0,0,0,0.05);">
+        <p style="font-size: 36px;">🐾</p>
+        <h3 style="color: #5a3a2d;">100% Pet-Friendly</h3>
+        <p style="color: #5a3a2d;">Recetas seguras y nutrición adecuada</p>
+    </div>
+
+    <div style="background-color: #f6e1cf; border-radius: 16px; padding: 20px; text-align: center; box-shadow: 0 0 10px rgba(0,0,0,0.05);">
+        <p style="font-size: 36px;">👩‍🍳</p>
+        <h3 style="color: #5a3a2d;">Sin experiencia previa</h3>
+        <p style="color: #5a3a2d;">Todos pueden comenzar desde cero</p>
+    </div>
+
+    <div style="background-color: #f6e1cf; border-radius: 16px; padding: 20px; text-align: center; box-shadow: 0 0 10px rgba(0,0,0,0.05);">
+        <p style="font-size: 36px;">📜</p>
+        <h3 style="color: #5a3a2d;">Certificado incluido</h3>
+        <p style="color: #5a3a2d;">Recibe tu diploma al finalizar</p>
+    </div>
+
+    <div style="background-color: #f6e1cf; border-radius: 10px; padding: 10px; text-align: center; box-shadow: 0 0 10px rgba(0,0,0,0.05);">
+        <p style="font-size: 36px;">🛍️</p>
+        <h3 style="color: #5a3a2d;">Emprende tu negocio</h3>
+        <p style="color: #5a3a2d;">Ideal para petlovers con visión</p>
+    </div>
+
+    <div style="background-color: #f6e1cf; border-radius: 10px; padding: 10px; text-align: center; box-shadow: 0 0 10px rgba(0,0,0,0.05);">
+        <p style="font-size: 36px;">⚡</p>
+        <h3 style="color: #5a3a2d;">Acceso inmediato</h3>
+        <p style="color: #5a3a2d;">Y de por vida, sin límite de tiempo</p>
+    </div>
+</div>
+ <div style="text-align: center; margin-top: 25px;">
+    <a href="#catalogo" style="display: inline-block; margin-top: 08px; background-color: #D88E49; color: #fff; font-size: 1.1rem; padding: 15px 30px; border-radius: 8px; text-decoration: none; transition: background 0.3s;">
+        Ver catálogo completo de cursos
+    </a>
+</div>
+
+  <div style="background-color: #fff9f3; padding: 30px 20px; text-align: center; font-family: 'Segoe UI', sans-serif;">
+        </div>
+    </div>
+
+
+<a href="#catalogo" style="
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #e7725c;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-decoration: none;
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+" onmouseover="this.style.backgroundColor='#ffffff'; this.style.transform='scale(1.05)';" onmouseout="this.style.backgroundColor='#e7725c'; this.style.transform='scale(1.0)';" title="Ir al Catálogo de Cursos">
+    <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/07/untitled-design-1.png" alt="Happy Teo Box Catálogo" style="width: 35px; height: 35px; border-radius: 50%;">
+</a>
+
+<div style="
+    position: fixed;
+    bottom: 30px; /* Misma distancia inferior que el botón de catálogo */
+    left: 30px; /* Posicionamiento en la esquina inferior izquierda */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column; /* Apila los botones verticalmente */
+    gap: 15px; /* Espacio entre los botones */
+">
+
+    <a href="https://wa.me/573180376297" target="_blank" style="
+        background-color: #25D366; /* Color de WhatsApp */
+        color: white;
+        border-radius: 50%;
+        width: 60px; /* Mismo ancho que el botón de catálogo */
+        height: 60px; /* Misma altura que el botón de catálogo */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Misma sombra */
+        text-decoration: none;
+        transition: transform 0.3s ease, background-color 0.3s ease; /* Misma transición */
+    " onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#1DA851';" onmouseout="this.style.transform='scale(1.0)'; this.style.backgroundColor='#25D366';" title="¡Háblanos por WhatsApp!">
+<img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/whatsapplogo-e1754082492950.jpg" alt="WhatsApp" style="width: 35px; height: 35px; border-radius: 50%;">
+        <span style="font-size: 30px;"></span> </a>
+
+    <a href="https://www.instagram.com/happyteobox?igsh=b3Q1MWxtZTJkNDA0&utm_source=qr" target="_blank" style="
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); /* Colores de Instagram */
+        color: white;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        text-decoration: none;
+        transition: transform 0.3s ease; /* La transición de color es diferente por el gradiente */
+    " onmouseover="this.style.transform='scale(1.05)';" onmouseout="this.style.transform='scale(1.0)';" title="Síguenos en Instagram"><img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/logo-ig.png" alt="Instagram" style="width: 35px; height: 35px; border-radius: 50%;">
+        <span style="font-size: 30px;"></span> </a>
+
+
+    <a href="https://www.facebook.com/share/1FgMEBZb3H/?mibextid=wwXIfr" target="_blank" style="
+        background-color: #1877F2; /* Color de Facebook */
+        color: white;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        text-decoration: none;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    " onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#145cb3';" onmouseout="this.style.backgroundColor='#1877F2';" title="Encuéntranos en Facebook"><img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/facebook_logo_square.png" alt="Facebook" style="width: 35px; height: 35px; border-radius: 50%;">
+        <span style="font-size: 30px;"></span> </a>
+
+    <a href="https://www.tiktok.com/@happyteobox?_t=ZS-8z17rj1H2Ye&_r=1" target="_blank" style="
+        background-color: #000000; /* Color de TikTok */
+        color: white;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        text-decoration: none;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    " onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#333333';" onmouseout="this.style.backgroundColor='#000000';" title="Síguenos en TikTok"><img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/tik-tok-logo.png" alt="Tiktok" style="width: 35px; height: 35px; border-radius: 50%;">
+        <span style="font-size: 30px;"></span> </a>
+
+</div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección de Testimonios - Happy Teo Box</title>
+    <style>
+        /* Estilos básicos para el cuerpo y fuentes (puedes adaptarlos a tu diseño general) */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #fcf8f5; /* Color de fondo general de tu página */
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Estilo para el efecto hover de las tarjetas (importante para la consistencia) */
+        .card-hover-effect {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <section id="testimonios" style="background-color: #fff9f3; padding: 50px 20px; text-align: center;">
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <h2 style="font-size: 32px; color: #5c3d2e; margin-bottom: 40px;">Historias de éxito de nuestra comunidad</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div class="card-hover-effect" style="background-color: #f6e1cf; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center;">
+                    <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/testimonio-1.jpg" alt="Foto estudiante 1" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+                    <p style="font-style: italic; color: #6a4b3a; margin-bottom: 15px;">"Hoy cumplo 6 meses de este gran emprendimiento y solo quiero agradecer mucho a Natural Taste por tanto conocimientos y a uds por siempre compartir y contestar todas las consultas grupales. Bendiciones para todos🐶🐾"</p>
+                    <strong style="color: #4a3b33;">Victoria G.</strong>
+                    <p style="color: #777; font-size: 0.9em;">Emprendedora Pet-Friendly</p>
+                </div>
+                <div class="card-hover-effect" style="background-color: #f6e1cf; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center;">
+                    <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/testimonio-2.jpg" alt="Foto estudiante 2" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+                    <p style="font-style: italic; color: #6a4b3a; margin-bottom: 15px;">"Les cuento que mi emprendimiento inició en Colombia en el Huila hace casi 4 años y ya tenemos sucursal en Mexico 🇲🇽 ha sido muchísimo más retador porque fue iniciar desde cero en un lugar que no conocía y es gratificante ver cuánto amor tienen por las mascotas en Mexico ❤️"</p>
+                    <strong style="color: #4a3b33;">Evelyn H.</strong>
+                    <p style="color: #777; font-size: 0.9em;">Emprendedora Pet-Friendly</p>
+                </div>
+                <div class="card-hover-effect" style="background-color: #f6e1cf; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center;">
+                    <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/testimonio-3.jpg" alt="Foto estudiante 3" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+                    <p style="font-style: italic; color: #6a4b3a; margin-bottom: 15px;">"Hola grupo, feliz con el resultado de mis pawletas del curso de PETLados! Están taaaan antojables 🤤 este es de mis cursos favoritos.
+"</p>
+                    <strong style="color: #4a3b33;">Luisa F.</strong>
+                    <p style="color: #777; font-size: 0.9em;">Estudiante de Petlados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección de Preguntas Frecuentes - Happy Teo Box</title>
+    <style>
+        /* Estilos básicos para el cuerpo y fuentes (puedes adaptarlos a tu diseño general) */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #fcf8f5; /* Color de fondo general de tu página */
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Estilos para FAQ (para que el contenido no aparezca todo el tiempo) */
+        .faq-item {
+            background-color: #fffdfc; /* Fondo de la caja de cada pregunta */
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Sombra suave para la caja */
+            overflow: hidden; /* Asegura que los bordes redondeados se mantengan */
+        }
+
+        .faq-item details > summary {
+            list-style: none; /* Elimina la flecha predeterminada del summary */
+            cursor: pointer;
+            padding: 18px 25px; /* Más padding para que el contenido de la pregunta respire */
+            background-color: #f9f3ec; /* Fondo del encabezado de la pregunta */
+            border-radius: 12px; /* Bordes redondeados para el summary */
+            font-weight: bold;
+            color: #5a3a2d; /* Color café oscuro para la pregunta */
+            font-size: 1.15em; /* Tamaño de fuente ligeramente más grande */
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+        .faq-item details > summary::-webkit-details-marker {
+            display: none; /* También para navegadores Webkit */
+        }
+        .faq-item details > summary::after {
+            content: '▼'; /* Flecha hacia abajo por defecto */
+            position: absolute;
+            right: 25px; /* Posiciona la flecha a la derecha */
+            font-size: 0.9em; /* Tamaño de la flecha */
+            color: #e7725c; /* Color de la flecha */
+            transition: transform 0.3s ease; /* Transición suave para la rotación */
+        }
+        .faq-item details[open] > summary::after {
+            content: '▲'; /* Flecha hacia arriba cuando está abierto */
+            transform: rotate(0deg); /* No necesitamos rotar, solo cambiar el símbolo */
+        }
+        .faq-item details > summary:hover {
+            background-color: #f5ece2; /* Ligero cambio de color al pasar el mouse */
+        }
+        .faq-item details > div {
+            padding: 20px 25px; /* Padding para la respuesta */
+            background-color: #fffdfc; /* Fondo de la respuesta */
+            border-top: 1px solid #eee; /* Línea separadora */
+            border-radius: 0 0 12px 12px; /* Bordes redondeados solo abajo para la respuesta */
+        }
+        .faq-item details > div p {
+            margin: 0; /* Elimina márgenes por defecto del párrafo dentro de la respuesta */
+            font-weight: bold; /* Respuesta en negrita */
+            color: #6a4b3a; /* Color café para la respuesta */
+            font-size: 1em; /* Asegura el tamaño de la fuente */
+        }
+    </style>
+</head>
+<body>
+
+      <section id="faq" style="background-color: #f6e1cf; padding: 50px 20px;">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h2 style="font-size: 32px; color: #5c3d2e; margin-bottom: 40px;">Resolvemos tus dudas más comunes</h2>
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <div class="faq-item">
+                    <details>
+                        <summary>¿Necesito experiencia previa en repostería o nutrición?</summary>
+                        <div>
+                            <p>No, nuestros cursos están diseñados para que aprendas desde cero. No necesitas experiencia previa, solo ganas de aprender y amor por las mascotas.</p>
+                        </div>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>¿Cómo accedo a los cursos una vez que los compro?</summary>
+                        <div>
+                            <p>Una vez confirmada tu compra en Hotmart, recibirás un email con los datos de acceso a la plataforma donde podrás ver todas las lecciones de tu curso de forma inmediata y de por vida.</p>
+                        </div>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>¿Los cursos incluyen un certificado?</summary>
+                        <div>
+                            <p>Sí, al finalizar cada curso y completar todas las lecciones, podrás descargar un certificado de participación que valida tus nuevos conocimientos.</p>
+                        </div>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>¿Qué tipo de soporte tengo si me surgen dudas?</summary>
+                        <div>
+                            <p>Cada curso cuenta con un área de preguntas y respuestas donde podrás interactuar directamente con el productor y otros estudiantes, además de acceso a nuestra comunidad de apoyo.</p>
+                        </div>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>¿Son seguros los métodos de pago?</summary>
+                        <div>
+                            <p>Absolutamente. Todas las transacciones se realizan a través de Hotmart, una de las plataformas de productos digitales más seguras y confiables del mundo.</p>
+                        </div>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>¿Hay garantía de devolución de dinero?</summary>
+                        <div>
+                            <p>Sí, Hotmart ofrece una garantía de satisfacción de 7 días. Si el curso no cumple tus expectativas, puedes solicitar un reembolso completo dentro de ese período.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección de Garantía y Seguridad - Happy Teo Box</title>
+    <style>
+        /* Estilos básicos para el cuerpo y fuentes (puedes adaptarlos a tu diseño general) */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #fcf8f5; /* Color de fondo general de tu página */
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Estilo para el efecto hover de las tarjetas (importante para la consistencia) */
+        .card-hover-effect {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+    <section style="background-color: #fff9f3; padding: 50px 20px; text-align: center;">
+        <div style="max-width: 900px; margin: 0 auto;">
+            <h2 style="font-size: 32px; color: #5c3d2e; margin-bottom: 30px;">Tu satisfacción es nuestra prioridad</h2>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+                <div class="card-hover-effect" style="flex: 1 1 280px; background-color: #fffdfc; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/garantia.png" alt="Garantía de 7 Días" style="width: 80px; height: auto; margin-bottom: 15px;">
+                    <h3 style="color: #6a4b3a; font-size: 1.4em; margin-bottom: 10px;">Garantía de 7 Días</h3>
+                    <p style="color: #555;">Si el curso no cumple tus expectativas, te devolvemos el 100% de tu dinero en los primeros 7 días. ¡Compra sin riesgos!</p>
+                </div>
+                <div class="card-hover-effect" style="flex: 1 1 280px; background-color: #fffdfc; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/compra-segura.png" alt="Compra Segura con Hotmart" style="width: 80px; height: auto; margin-bottom: 15px;">
+                    <h3 style="color: #6a4b3a; font-size: 1.4em; margin-bottom: 10px;">Compra Segura con Hotmart</h3>
+                    <p style="color: #555;">Tus transacciones están protegidas por la plataforma líder en productos digitales. Datos encriptados y protegidos.</p>
+                </div>
+                <div class="card-hover-effect" style="flex: 1 1 280px; background-color: #fffdfc; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/soporte.png" alt="Soporte Técnico Especializado" style="width: 80px; height: auto; margin-bottom: 15px;">
+                    <h3 style="color: #6a4b3a; font-size: 1.4em; margin-bottom: 10px;">Soporte Técnico Especializado</h3>
+                    <p style="color: #555;">Accede al equipo de soporte de Hotmart para cualquier duda técnica o de acceso a la plataforma.</p>
+                </div>
+            </div>
+            <p style="font-size: 1.1em; color: #7a5c4d; margin-top: 50px;">
+                ¡Miles de estudiantes satisfechos ya confían en nosotros!
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección de Contacto - Happy Teo Box</title>
+    <style>
+        /* Estilos básicos para el cuerpo y fuentes (puedes adaptarlos a tu diseño general) */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #fcf8f5; /* Color de fondo general de tu página */
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <section id="contacto" style="background-color: #f6e1cf; padding: 50px 20px; text-align: center;">
+        <div style="max-width: 700px; margin: 0 auto;">
+            <h2 style="font-size: 32px; color: #5c3d2e; margin-bottom: 30px;">¿Necesitas ayuda o tienes alguna pregunta adicional?</h2>
+            <p style="font-size: 1.1em; color: #7a5c4d; margin-bottom: 40px;">
+                ¡Estamos aquí para ayudarte! Contáctanos a través de nuestros canales o escríbenos directamente.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-bottom: 50px;">
+                <a href="https://wa.me/573180376297" target="_blank" style="display: flex; align-items: center; background-color: #25D366; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1em; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#1DA851'" onmouseout="this.style.backgroundColor='#25D366'">
+                    <span style="margin-right: 10px;">📞</span> WhatsApp
+                </a>
+                <a href="mailto:mundopetemprende@gmail.com" style="display: flex; align-items: center; background-color: #e7725c; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1em; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#d95c45'" onmouseout="this.style.backgroundColor='#e7725c'">
+                    <span style="margin-right: 10px;">📧</span> Enviar Email
+                </a>
+            </div>
+            
+            </div>
+    </section>
+
+</body>
+</html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer - Happy Teo Box</title>
+    <style>
+        /* Estilos básicos para el cuerpo y fuentes (puedes adaptarlos a tu diseño general) */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #fcf8f5; /* Color de fondo general de tu página */
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* TRANSICIONES PARA EL HOVER DE LOS ICONOS DEL FOOTER */
+        .footer-social-icon {
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        .footer-social-icon:hover {
+            transform: scale(1.2);
+            /* Puedes cambiar el color al hover si lo deseas, por ejemplo: */
+            /* color: #e7725c !important; */
+        }
+        .footer-nav-link {
+            transition: color 0.3s ease;
+        }
+        .footer-nav-link:hover {
+            color: #e7725c !important; /* Resalta con el color principal al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+
+    <footer style="background-color: #5a3a2d; color: white; padding: 50px 20px; text-align: center; font-size: 0.9em;">
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <p style="margin-bottom: 25px;">© 2025 Happy Teo Box. Todos los derechos reservados.</p>
+            <div style="margin-bottom: 25px;">
+                <a href="#inicio" class="footer-nav-link" style="color: white; text-decoration: none; margin: 0 15px;">Inicio</a>
+                <a href="#catalogo" class="footer-nav-link" style="color: white; text-decoration: none; margin: 0 15px;">Cursos</a>
+                <a href="#testimonios" class="footer-nav-link" style="color: white; text-decoration: none; margin: 0 15px;">Testimonios</a>
+                <a href="#faq" class="footer-nav-link" style="color: white; text-decoration: none; margin: 0 15px;">FAQ</a>
+                <a href="#contacto" class="footer-nav-link" style="color: white; text-decoration: none; margin: 0 15px;">Contacto</a>
+            </div>
+            <div style="margin-bottom: 30px;">
+                <a href="https://www.facebook.com/share/1FgMEBZb3H/?mibextid=wwXIfr" target="_blank" class="footer-social-icon" style="color: white; font-size: 2em; margin: 0 15px; text-decoration: none;"><img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/facebook_logo_square.png" alt="Facebook" style="width: 35px; height: 35px; border-radius: 50%;">
+        <span style="font-size: 30px;"></span> </a>
+</a>
+                <a href="https://www.instagram.com/happyteobox/" target="_blank" class="footer-social-icon" style="color: white; font-size: 2em; margin: 0 15px; text-decoration: none;"><img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/logo-ig.png" alt="Instagram" style="width: 35px; height: 35px; border-radius: 50%;">
+        <span style="font-size: 30px;"></span> </a>
+</a>
+                <a href="https://www.tiktok.com/@happyteobox?_t=ZS-8z17rj1H2Ye&_r=1" target="_blank" class="footer-social-icon" style="color: white; font-size: 2em; margin: 0 15px; text-decoration: none;"><img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/tik-tok-logo.png" alt="Tiktok" style="width: 35px; height: 35px; border-radius: 50%;">
+        <span style="font-size: 30px;"></span> </a>
+</a>
+                <a href="https://wa.me/573180376297" target="_blank" class="footer-social-icon" style="color: white; font-size: 2em; margin: 0 15px; text-decoration: none;"><img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/whatsapplogo-e1754082492950.jpg" alt="WhatsApp" style="width: 35px; height: 35px; border-radius: 50%;">
+        <span style="font-size: 30px;"></span> </a>
+</a>
+            </div>
+            <p style="font-size: 0.8em; color: rgba(255,255,255,0.7);">Diseñado con ❤️ para emprendedores pet-friendly.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
